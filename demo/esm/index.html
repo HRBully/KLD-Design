@@ -2,14 +2,13 @@
 <div id="app"></div>
 <script type="module">
     import { createApp } from "vue/dist/vue.esm-bundler.js";
-    import KldDesign, { KButton } from "../../dist/kld.mjs";
+    import MyKitPlugin, {
+      Button
+    } from "../../dist/kld.mjs";
 
     createApp({
-        template: `
-            <div>
-                <h1>Hello Smarty UI</h1>
-                <k-button>Button</k-button>
-            </div>
-    `}).use(KldDesign).mount('#app')
-
+          template: `
+      <Button>111</Button>
+      `,
+    }).use(MyKitPlugin).mount("#app");
 </script>
